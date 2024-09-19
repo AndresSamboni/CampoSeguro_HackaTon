@@ -6,8 +6,8 @@ const CarouselComponent = () => {
     {source: '/images/planta.jpg', description: 'Mujer sosteniendo planta', id: 3},
   ]
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-[700px]">
-      <Carousel>
+    <div className="h-56 sm:h-64 xl:h-[600px] 2xl:h-[700px]" id='inicio'>
+      <Carousel pauseOnHover>
         {
           imgArray.map(image => {
             return (

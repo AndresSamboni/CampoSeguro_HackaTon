@@ -1,7 +1,11 @@
+/* React - Leaflet */
+@import "leaflet/dist/leaflet.css";
+
 /* Tailwind */
 @tailwind base;
+html {
+  scroll-behavior: smooth;
+}
 @tailwind components;
 @tailwind utilities;
 
-/* React - Leaflet */
-@import "leaflet/dist/leaflet.css";
