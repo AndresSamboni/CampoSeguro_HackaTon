@@ -1,3 +1,7 @@
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* React - Leaflet */
+@import "leaflet/dist/leaflet.css";
