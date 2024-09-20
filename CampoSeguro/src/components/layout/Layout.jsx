@@ -18,8 +18,16 @@ function Layout() {
       </div>
       <div className="w-full h-auto">
         <h2 className="text-4xl font-bold text-primaryBlue mb-5 text-center">¿Qué queremos lograr?</h2>
+        <p className="text-center font-normal text-darkText mb-5">
+          En nuestro compromiso por un Cauca más seguro y próspero, tenemos una misión clara: mejorar las condiciones socioeconómicas de las regiones afectadas por los cultivos ilícitos. No se trata solo de erradicar plantas, sino de transformar vidas.
+        </p>
+        <h2 className="text-4xl font-bold text-primaryBlue mb-5 text-center">¿Cómo lo lograremos?</h2>
+        <p className="text-center font-normal text-darkText mb-5">
+          A través de una plataforma dinámica que conecte a la comunidad con las autoridades.
+        </p>
+        <h2 className="text-4xl font-bold text-primaryBlue mb-5 text-center">¿Qué ganamos con esto?</h2>
         <p className="text-center font-normal text-darkText">
-          Queremos mejorar las condiciones socio económicas de las regiones afectadas por los cultivos ilícitos, facilitando a las autoridades obtener información precisa y en tiempo real a través de nuestra plataforma garantizándola seguridad  de las personas y en este caso particular del reto es mediante la creación de un formulario de reportes.
+          Primero, la seguridad de las personas. Cada reporte es un paso hacia la protección de nuestras familias, nuestros vecinos y nuestros territorios. Segundo, la confianza en nuestras instituciones. Al facilitar el acceso a datos verificables, estamos construyendo puentes entre la comunidad y las autoridades.
         </p>
       </div>
     </div>
