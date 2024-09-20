@@ -14,13 +14,13 @@ function NavBar() {
                     <img src="/logo/logo.png" className="mr-3 h-12 sm:h-24" alt="Campo Seguro Logo" />
                     <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white text-darkText">Campo Seguro</span>
                 </Navbar.Brand>
-                <div className="flex md:order-2 text-xl">
+                <div className="flex md:order-2 text-2xl">
                     <a href="#reportarMapa">
                         <Button
                             type="button"
                             className="bg-ctaOrange hover:bg-orange-500 text-white"
                         >
-                            Reporta un Cultivo
+                            Contribuye a un Cauca Seguro
                         </Button>
                     </a>
                     <Navbar.Toggle />
