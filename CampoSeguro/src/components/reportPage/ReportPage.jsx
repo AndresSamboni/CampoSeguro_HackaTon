@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import MapComponent from '../mapComponent/MapComponent';
 import ReportForm from '../reportForm/ReportForm';
+import axios from 'axios'
 
 // Component: name=ReportPage
 function ReportPage() {
@@ -23,7 +24,7 @@ function ReportPage() {
         };
 
         // Enviar datos al servidor
-        console.log('Reporte Detallado Enviado:', reportData);
+        axios.post('/notification', reportData)
         alert('Reporte detallado enviado exitosamente.');
     };
     const handleImmediateReport = (location) => {
@@ -34,7 +35,7 @@ function ReportPage() {
         };
 
         // Enviar datos al servidor
-        console.log('Reporte Inmediato Enviado:', reportData);
+        axios.post('/notification', reportData)
         alert('Reporte inmediato enviado exitosamente.');
     };
 

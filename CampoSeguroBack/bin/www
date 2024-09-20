@@ -1,0 +1,9 @@
+import app from '../app.js'
+import 'dotenv/config'
+
+let { PORT } = process.env
+PORT = PORT || 3000
+
+app.listen(PORT, () => {
+  console.log(`Server raised in port ${PORT}`)
+})
