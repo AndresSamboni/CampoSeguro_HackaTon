@@ -1,12 +1,10 @@
 // Import libraries
 import { Button, Navbar } from "flowbite-react";
-import { useNavigate } from "react-router-dom";
 
 // Component name:NavBar
 function NavBar() {
 
     // Navigation into the navbar
-    const navigate = useNavigate()
 
     // Render component
     return (
@@ -17,13 +15,14 @@ function NavBar() {
                     <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white text-darkText">Campo Seguro</span>
                 </Navbar.Brand>
                 <div className="flex md:order-2 text-xl">
-                    <Button
-                        onClick={() => navigate('/reportar')}
-                        type="button"
-                        className="bg-ctaOrange hover:bg-orange-500 text-white"
-                    >
-                        Reporta un Cultivo
-                    </Button>
+                    <a href="#reportarMapa">
+                        <Button
+                            type="button"
+                            className="bg-ctaOrange hover:bg-orange-500 text-white"
+                        >
+                            Reporta un Cultivo
+                        </Button>
+                    </a>
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
@@ -36,8 +35,6 @@ function NavBar() {
                     <Navbar.Link href="#nosotros" className="text-xl text-primaryBlue">
                         Sobre Nosotros
                     </Navbar.Link>
-                    {/* <Navbar.Link href="#">Pricing</Navbar.Link>
-                    <Navbar.Link href="#">Contact</Navbar.Link> */}
                 </Navbar.Collapse>
             </Navbar>
         </header>

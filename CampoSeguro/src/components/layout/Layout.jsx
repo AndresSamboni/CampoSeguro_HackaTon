@@ -1,7 +1,10 @@
 // Component name: Layout
 function Layout() {
   return (
-    <div className="mt-12 pl-9 pr-9 my-6 w-full md:flex flex-row gap-9 items-center bg-lightGray" id='queremos'>
+    <div
+      className="mt-12 pl-9 pr-9 my-6 w-full md:flex flex-row gap-9 items-center bg-lightGray scroll-m-32"
+      id='queremos'
+    >
       <div className="w-full h-auto rounded-lg shadow-md">
         <iframe
           className="w-full h-96 rounded-lg"

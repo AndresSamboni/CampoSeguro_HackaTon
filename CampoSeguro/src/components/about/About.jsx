@@ -1,7 +1,7 @@
 // Component name: About
 function About() {
   return (
-    <div className="flex flex-col items-center bg-lightGray p-8 md:p-12" id='nosotros'>
+    <div className="flex flex-col items-center bg-lightGray p-8 md:p-12 scroll-m-32" id='nosotros'>
       <div className="flex flex-col w-full max-w-4xl">
         <h1 className="text-4xl md:text-5xl font-extrabold text-darkText text-center mb-6">Quiénes Somos</h1>
 
