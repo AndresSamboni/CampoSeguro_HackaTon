@@ -31,13 +31,12 @@ function ReportForm({ location, onSubmit }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         onSubmit(formData);
-
-        alert('Reporte detallado enviado exitosamente.');
     };
 
     // Render the component
     return (
-        <form onSubmit={handleSubmit} className="space-y-6 bg-lightGray p-8 rounded-lg shadow-md">
+        <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Tipo de Cultivo Ilícito */}
             <div>
                 <label htmlFor="cropType" className="block text-sm font-medium text-darkText">Tipo de Cultivo Ilícito</label>
                 <select
@@ -55,6 +54,7 @@ function ReportForm({ location, onSubmit }) {
                 </select>
             </div>
 
+            {/* Latitud */}
             <div>
                 <label htmlFor="latitude" className="block text-sm font-medium text-darkText">Latitud</label>
                 <input
@@ -68,6 +68,7 @@ function ReportForm({ location, onSubmit }) {
                 />
             </div>
 
+            {/* Longitud */}
             <div>
                 <label htmlFor="longitude" className="block text-sm font-medium text-darkText">Longitud</label>
                 <input
@@ -81,6 +82,7 @@ function ReportForm({ location, onSubmit }) {
                 />
             </div>
 
+            {/* Información Adicional */}
             <div>
                 <label htmlFor="additionalInfo" className="block text-sm font-medium text-darkText">Información Adicional</label>
                 <textarea
@@ -94,9 +96,10 @@ function ReportForm({ location, onSubmit }) {
                 />
             </div>
 
+            {/* Botón de Envío */}
             <button
                 type="submit"
-                className="w-full bg-successGreen text-white text-xl py-2 px-4 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryBlue font-semibold"
+                className="w-full bg-successGreen text-white text-lg py-2 px-4 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-successGreen font-semibold transition transform hover:scale-105"
             >
                 Reporte Detallado
             </button>

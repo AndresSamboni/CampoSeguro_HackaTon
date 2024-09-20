@@ -8,16 +8,16 @@ import 'leaflet/dist/leaflet.css';
 
 // Define custom icon for immediate and default report
 const defaultIcon = new L.Icon({
-    iconUrl: '/icons/marker-icon.png', 
-    iconSize: [50, 50],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
+    iconUrl: '/icons/marker-icon.png',
+    iconSize: [30, 30],
+    iconAnchor: [15, 50],
+    popupAnchor: [0, -50],
 });
 const redIcon = new L.Icon({
     iconUrl: '/icons/marker-icon-red.png',
-    iconSize: [50, 50],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
+    iconSize: [30, 30],
+    iconAnchor: [15, 50],
+    popupAnchor: [0, -50],
 });
 
 // Component: name=MapComponent
@@ -31,7 +31,6 @@ function MapComponent({ setLocation, onImmediateReport }) {
     const LocationMarker = () => {
         useMapEvents({
             click(e) {
-                // Set the position and location
                 setPosition(e.latlng);
                 setLocation(e.latlng);
             },
@@ -57,7 +56,6 @@ function MapComponent({ setLocation, onImmediateReport }) {
         );
     };
 
-
     // Define the handlers
     const handleImmediateReport = () => {
         if (navigator.geolocation) {
@@ -68,7 +66,7 @@ function MapComponent({ setLocation, onImmediateReport }) {
                 setLocation(immediateLocation);
                 onImmediateReport(immediateLocation);
 
-                // Notify user
+                // Notificar al usuario
                 alert('Reporte inmediato enviado exitosamente.');
             }, (error) => {
                 alert('No se pudo obtener la ubicación actual.');
@@ -80,8 +78,8 @@ function MapComponent({ setLocation, onImmediateReport }) {
 
     // Render the component
     return (
-        <div className="h-96 w-full pointer-events-auto">
-            <MapContainer center={[2.45, -76.6]} zoom={8} className="h-full w-full">
+        <div className="flex flex-col h-full">
+            <MapContainer center={[2.45, -76.6]} zoom={8} className="h-80 md:h-96 w-full rounded-lg shadow-md">
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; OpenStreetMap contributors"
@@ -90,9 +88,9 @@ function MapComponent({ setLocation, onImmediateReport }) {
             </MapContainer>
             <button
                 onClick={handleImmediateReport}
-                className="mt-4 w-full bg-ctaOrange text-white text-xl py-2 px-4 rounded-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                className="mt-4 w-full bg-ctaOrange text-white text-lg py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 font-semibold transition transform hover:scale-105"
             >
-                <strong>Reporte inmediato</strong>
+                Reporte inmediato
             </button>
         </div>
     );
