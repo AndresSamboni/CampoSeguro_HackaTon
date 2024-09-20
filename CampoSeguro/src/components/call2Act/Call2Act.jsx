@@ -30,12 +30,14 @@ function Call2Act() {
                     </p>
 
                     {/* Botón de Llamado a la Acción */}
-                    <button
-                        onClick={goToReportSection}
-                        className="bg-ctaOrange text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
-                    >
-                        Reportar Cultivos Ilícitos
-                    </button>
+                    <a href="#reportarMapa">
+                        <button
+                            onClick={goToReportSection}
+                            className="bg-ctaOrange text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+                        >
+                            Reportar Cultivos Ilícitos
+                        </button>
+                    </a>
                 </div>
             </div>
             {/* Imagen ilustrativa opcional */}
