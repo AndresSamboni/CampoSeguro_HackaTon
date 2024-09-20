@@ -38,14 +38,14 @@ function ReportPage() {
 
     // Render the component
     return (
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-            <div className="w-full md:w-1/2">
-                <h2 className="text-xl font-bold mb-4">Selecciona la ubicación en el mapa</h2>
+        <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 p-8 bg-lightGray my-6">
+            <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+                <h2 className="text-2xl font-bold mb-4 text-primaryBlue">Selecciona la ubicación en el mapa</h2>
                 <MapComponent setLocation={setLocation} onImmediateReport={handleImmediateReport} />
             </div>
 
-            <div className="w-full md:w-1/2">
-                <h2 className="text-xl font-bold mb-4">Completa el reporte</h2>
+            <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+                <h2 className="text-2xl font-bold mb-4 text-primaryBlue">Completa el reporte</h2>
                 <ReportForm location={location} onSubmit={handleFormSubmit} />
             </div>
         </div>

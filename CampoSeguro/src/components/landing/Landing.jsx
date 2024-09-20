@@ -1,10 +1,14 @@
-import { CarouselComponent } from "../carouselComponent/CarouselComponent";
+// Import libraries
+import CarouselComponent from "../carouselComponent/CarouselComponent";
 
-const Landing = () => {
+// Component name: Landing
+function Landing() {
   return (
-    <>
+    <div className="bg-lightGray mb-6">
       <CarouselComponent/>
-    </>
+    </div>
   )
 }
-export {Landing};
+
+// Export component
+export default Landing;

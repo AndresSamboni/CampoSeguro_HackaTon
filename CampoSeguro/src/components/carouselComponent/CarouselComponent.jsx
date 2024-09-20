@@ -1,9 +1,12 @@
+// Import libraries
 import { Carousel } from "flowbite-react";
-const CarouselComponent = () => {
+
+// Component name: CarouselComponent
+function CarouselComponent() {
   const imgArray = [
-    {source: '/images/campesino1.jpg', description: 'Campesino arando la tierra', id: 1},
-    {source: '/images/granja1.jpg', description: 'Granja en medio de campo', id: 2},
-    {source: '/images/planta.jpg', description: 'Mujer sosteniendo planta', id: 3},
+    { source: '/images/campesino1.jpg', description: 'Campesino arando la tierra', id: 1 },
+    { source: '/images/granja1.jpg', description: 'Granja en medio de campo', id: 2 },
+    { source: '/images/planta.jpg', description: 'Mujer sosteniendo planta', id: 3 },
   ]
   return (
     <div className="h-56 sm:h-64 xl:h-[600px] 2xl:h-[700px]" id='inicio'>
@@ -11,7 +14,12 @@ const CarouselComponent = () => {
         {
           imgArray.map(image => {
             return (
-              <img src={image.source} key={image.id} alt={image.description} />
+              <img
+                src={image.source}
+                key={image.id}
+                alt={image.description}
+                className="object-cover w-full h-full"
+              />
             )
           })
         }
@@ -19,4 +27,6 @@ const CarouselComponent = () => {
     </div>
   )
 }
-export { CarouselComponent };
+
+// Export component
+export default CarouselComponent;

@@ -9,7 +9,15 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primaryBlue: '#3DBFF2',      // Azul Brillante
+        successGreen: '#81D959',     // Verde Brillante
+        ctaOrange: '#F28705',        // Naranja Brillante
+        lightGray: '#F2F2F2',        // Gris Claro
+        darkText: '#0D0D0D',         // Casi Negro
+      },
+    },
   },
   plugins: [
     flowbite.plugin(),
