@@ -1,16 +1,5 @@
-// Import libraries
-import { useNavigate } from 'react-router-dom';
-
 // Component name: Call2Act
 function Call2Act() {
-
-    // Navigation active
-    const navigate = useNavigate();
-
-    // Function to navigate to report section
-    const goToReportSection = () => {
-        navigate('/reportar');
-    };
 
     // Render component
     return (
@@ -31,11 +20,9 @@ function Call2Act() {
 
                     {/* Botón de Llamado a la Acción */}
                     <a href="#reportarMapa">
-                        <button
-                            onClick={goToReportSection}
-                            className="bg-ctaOrange text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+                        <button className="bg-ctaOrange text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
                         >
-                            Reportar Cultivos Ilícitos
+                            Contribuye a un Cauca Seguro
                         </button>
                     </a>
                 </div>
