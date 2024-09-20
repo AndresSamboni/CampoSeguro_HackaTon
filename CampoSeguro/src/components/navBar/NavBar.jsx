@@ -10,7 +10,7 @@ function NavBar() {
 
     // Render component
     return (
-        <header className="bg-lightGray sticky top-0 w-full z-10 shadow-md">
+        <header className="bg-lightGray sticky top-0 w-full z-50 shadow-md">
             <Navbar fluid rounded>
                 <Navbar.Brand href="#inicio">
                     <img src="/logo/logo.png" className="mr-3 h-12 sm:h-24" alt="Campo Seguro Logo" />
